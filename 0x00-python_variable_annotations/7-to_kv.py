@@ -6,8 +6,5 @@ from typing import List, Union, Tuple
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-    li = []
-    li += k
-    w = float(v)
-    li += w
-    return li
+    '''takes a string and an int OR float as arguments and returns a tuple'''
+    return (k, float(v**2))
