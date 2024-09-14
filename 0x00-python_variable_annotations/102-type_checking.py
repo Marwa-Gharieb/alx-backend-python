@@ -5,7 +5,7 @@ from typing import List, Tuple, Iterable, Sequence
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
-    '''zooming function '''
+    '''zooming Array'''
     zoomed_in: List = [
         item for item in lst
         for i in range(factor)
