@@ -10,4 +10,4 @@ async def wait_n(n: int, max_delay: int) -> list[float]:
     ''' a function that runs another function a specific times'''
     list = []
     list = await asyncio.gather(*(wait_random(max_delay) for i in range(n)))
-    return list
+    return sorted(list)
